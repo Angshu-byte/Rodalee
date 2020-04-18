@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Rodalee</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="navigation_drawer_close">navigation drawer</string>
+    <string name="navigation_drawer_open">navigation drawer open</string>
+    <string-array name="sub_divison">
+        <item>--Select Sub Division--</item>
+        <item>Abhayapuri</item>
+        <item>Agomoni</item>
+        <item>Amguri</item>
+        <item>Amingaon</item>
+        <item>Badarpur</item>
+        <item>Baihata Chariali</item>
+        <item>Balipara</item>
+        <item>Barama</item>
+        <item>Barpeta</item>
+        <item>Barpeta Road</item>
+        <item>Bashista </item>
+        <item>Basugaon</item>
+        <item>Bihpuria</item>
+        <item>Bijni</item>
+        <item>Bilasipara</item>
+        <item>Bokajan</item>
+        <item>Bokakhat</item>
+        <item>Boko</item>
+        <item>Bongaigaon-I</item>
+        <item>Bongaigaon-II</item>
+        <item>Bordubi</item>
+        <item>Capital</item>
+        <item>Chamata</item>
+        <item>Chandmari</item>
+        <item>Chapakhowa</item>
+        <item>Chapar</item>
+        <item>Chaibahi</item>
+        <item>Charaideo</item>
+        <item>Chariali</item>
+        <item>Chaygaon</item>
+        <item>Chilapathar</item>
+        <item>Damra</item>
+        <item>Demow</item>
+        <item>Dhergaon</item>
+        <item>Chapar</item>
+        <item>Chapar</item>
+        <item>Chapar</item>
+        <item>Chapar</item>
+        <item>Chapar</item>
+        <item>Chapar</item>
+        <item>Chapar</item>
+        <item>Chapar</item>
+        <item>Chapar</item>
+        <item>Chapar</item>
+    </string-array>
+    <string-array name="category">
+        <item>--Select Category--</item>
+        <item>Domestic</item>
+        <item>Commercial</item>
+        <item>Bulk Supply</item>
+        <item>Industrial</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="usability">
+        <item>--Select Usability--</item>
+        <item>Residential</item>
+        <item>Social</item>
+        <item>Institutioanl</item>
+        <item>Government</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="Voltage_of_supply">
+        <item>--Select Supply--</item>
+        <item>11kv</item>
+        <item>33kv</item>
+        <item>230v</item>
+        <item>440v</item>
+    </string-array>
+
+    <string-array name="Metering_device">
+        <item>--Select metering device--</item>
+        <item>HT meter</item>
+        <item>Single phase 2 wire whole curret static LT meter phase</item>
+        <item>3 phase 4 wire static Trivector LT meter</item>
+        <item>3 phase 4 wire CT Operated Trivector meter</item>
+    </string-array>
+
+    <string-array name="establishment">
+        <item>--Select establishment--</item>
+        <item>Educational</item>
+        <item>Health</item>
+        <item>Community Center</item>
+        <item>Welfare Home</item>
+        <item>Orphanage</item>
+        <item>Home Lighting</item>
+        <item>Trust/NGO/Voluntary Organistaion</item>
+    </string-array>
+    <string-array name="Area">
+        <item>--Select Area--</item>
+        <item>Assam Type</item>
+        <item>Multi-storeyed building</item>
+        <item>Apartment</item>
+        <item>Ground</item>
+    </string-array>
+
+    <!--   //Consumer reference details asterik-->
+    <string name="asteriskred"><font color='#cc0029'>*</font></string>
+    <string name="Consumerno">Consumer No</string>
+    <string name="namereg">Name</string>
+    <string name="Subdivision">Sub Division</string>
+    <string name="Sectorofusability">Sector of Usability</string>
+    <string name="TypeofEstablishment">Type of Establishment</string>
+    <string name="Category">Category</string>
+    <string name="Pincode">Pincode</string>
+    <string name="Email">Email</string>
+    <string name="mobileno">Mobile No</string>
+
+    <!--    //Applicantdetails-->
+    <string name="addressforcorresondence">Address for Correspondece</string>
+    <string name="sector_of_usability">Sector of Usability</string>
+    <string name="voltage_of_supply">Voltage of Supply</string>
+    <string name="existing_metering_device">Existing Metering Device</string>
+    <string name="existing_supply">Existing Supply</string>
+    <string name="type_of_metering">Type of Metering</string>
+    <string name="cleared">Has the consumer any arrear dues to be cleared?</string>
+    <string name="connected_load_kw">Connected Load (kW)</string>
+    <string name="contract_demand_for_ht_consumers_in_kva">Contract demand(For HT Consumers in kVA)</string>
+
+    //Power Project details Spinner
+    <string-array name="Custom_Spinner">
+        <item> Choose</item>
+        <item> Fetch from admin</item>
+        <item> Not from consumer</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Applicantdetails">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:subtitle="Applicant details"
+            app:titleMargin="4dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+            <TextView
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sector_of_usability"
+                android:textColor="@color/sign"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/Usability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/voltage_of_supply"
+                android:textColor="@color/sign"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/supply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/existing_metering_device"
+                android:textColor="@color/sign"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/meter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/existing_supply"
+                        android:textColor="@color/sign"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Single phase "
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Three phase"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type_of_metering"
+                        android:textColor="@color/sign"
+                        android:textSize="14sp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/prepaid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prepaid "
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/postpaid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Postpaid"
+                        android:textSize="15sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cleared"
+                    android:textColor="@color/sign"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes "
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="14sp" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/connected_load_kw"
+                android:textColor="@color/sign"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter connection Load in kw">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/connected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Maximum allowable Plant Capacity(kWp)"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/view9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/hello"
+                    android:textSize="25sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contract_demand_for_ht_consumers_in_kva"
+                android:textColor="@color/sign"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter contract demand in kVA">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contract"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Maximum allowable Plant Capacity in kVA"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/view10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/hello"
+                    android:textSize="25sp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="10dp"
+                android:text="Save">
+
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

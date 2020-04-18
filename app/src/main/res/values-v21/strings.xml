@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="namereg">Name</string>
+    <string name="Multiline_Text_By_N">
+        Application Form Approval For Grid \nConnectivity of Solar Rooftop PV \nGeneration System
+    </string>
+    <string name="Subdivision">Sub Division</string>
+</resources>

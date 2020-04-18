@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Notification"
+        android:id="@+id/bottomNavigationAlarmMenuId"
+        android:icon="@drawable/alarm_vector_icon"/>
+    <item android:title="Home"
+        android:id="@+id/bottomNavigationClockMenuId"
+        android:icon="@drawable/clock_vector_icon"/>
+    <item android:title="Logout"
+        android:id="@+id/bottomNavigationTimerMenuId"
+        android:icon="@drawable/timer_vector_icon"/>
+
+
+</menu>

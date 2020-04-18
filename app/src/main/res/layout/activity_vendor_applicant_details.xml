@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendorApplicantDetails">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:subtitle="Applicant details"
+            app:titleMargin="4dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e5e5e5"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of the applicant/organization"
+                android:layout_marginHorizontal="1dp"
+                android:textSize="17sp"
+                android:layout_marginBottom="5dp">
+
+            </TextView>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/applicantname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:layout_marginStart="1dp"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tvText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Address of the Registered Office"
+                    android:textColor="@color/sign" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/tvText"
+                    android:background="@color/hello" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/tvText"
+                    android:background="@color/hello" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_marginHorizontal="1dp"
+                android:textSize="17sp"
+                android:layout_marginBottom="5dp">
+
+            </TextView>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registeredaddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff"
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:layout_marginStart="1dp"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Mobile no"
+                    android:layout_marginHorizontal="1dp"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="142dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Pin"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registeredmobile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="200dp"
+                    android:background="#ffffff"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:maxLength="10"
+                    android:textSize="15sp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="200dp"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registeredpin"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginLeft="220dp"
+                    android:background="#ffffff"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:maxLength="6"
+                    android:textSize="15sp"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Email"
+                    android:layout_marginHorizontal="1dp"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Website"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registeredemail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="200dp"
+                    android:background="#ffffff"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="200dp"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registeredwebsite"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginLeft="220dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Details of the Authorized Person"
+                    android:textColor="@color/sign" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/text1"
+                    android:background="@color/hello" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/text1"
+                    android:background="@color/hello" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginHorizontal="1dp"
+                android:textSize="17sp"
+                android:layout_marginBottom="5dp"/>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/authorizedname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:layout_marginStart="1dp"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Address"
+                    android:layout_marginHorizontal="1dp"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Designation"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/authorizedaddress"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="200dp"
+                    android:background="#ffffff"
+                    android:inputType="textMultiLine"
+                    android:overScrollMode="always"
+                    android:scrollbars="vertical"
+                    android:scrollbarStyle="insideInset"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="200dp"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/authorizeddesignation"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginLeft="220dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Email"
+                    android:layout_marginHorizontal="1dp"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Mobile no"
+                    android:textSize="17sp"
+                    android:layout_marginStart="175dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/authorizedemail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="200dp"
+                    android:background="#ffffff"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="200dp"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/authorizedmobile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginLeft="220dp"
+                    android:background="#ffffff"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:maxLength="10"
+                    android:textSize="15sp"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+            </RelativeLayout>
+            <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="10dp"
+            android:text="Save" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

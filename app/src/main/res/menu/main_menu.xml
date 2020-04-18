@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home"
+            />
+
+        <item
+            android:id="@+id/status"
+            android:icon="@drawable/about"
+            android:title="Status" />
+
+
+    </group>
+    <item android:title="Account">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/login"
+                    android:title="Login" />
+
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile"
+                    android:title="Profile" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/add"
+                    android:title="Logout" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Help">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_faq"
+                    android:icon="@drawable/login"
+                    android:title="FAQ" />
+
+
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/profile"
+                    android:title="Contact us" />
+
+                <item
+                    android:id="@+id/terms"
+                    android:icon="@drawable/add"
+                    android:title="Terms and Privacy Policy" />
+
+            </group>
+        </menu>
+    </item>
+</menu>
+

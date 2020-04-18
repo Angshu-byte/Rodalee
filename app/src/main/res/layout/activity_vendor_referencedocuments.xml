@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendorReferencedocuments">
+    <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:subtitle="Applicant details"
+        app:titleMargin="4dp" />
+</com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        android:padding="20dp"
+        android:background="#e5e5e5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Registration Reference"
+                android:textColor="@color/sign" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toLeftOf="@id/text3"
+                android:background="@color/hello" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/text3"
+                android:background="@color/hello" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginTop="10dp"
+            android:text="Under Company Registration Act.1956(Enclose MoA,AoA certificate)"
+            android:textSize="17sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <RadioButton
+                android:id="@+id/companyregistrationyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes "
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/companyregistrationno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/companyupload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_marginHorizontal="20dp"
+                android:text="Upload" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginTop="10dp"
+            android:text="Under the Partnership Firm (Enclose Partnership deed, Firm’s registration)"
+            android:textSize="17sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <RadioButton
+                android:id="@+id/partnershipfirmyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes "
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/partnershipfirmno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/regupload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="Upload" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginTop="10dp"
+            android:text="Any other entity (Enclose relevant documents)"
+            android:textSize="17sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <RadioButton
+                android:id="@+id/entityyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes "
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/entityno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/entitypload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="Upload" />
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
